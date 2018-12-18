@@ -44,7 +44,7 @@ public class TestSuite {
 
 
     @BeforeSuite
-    public void IOSSettings()throws MalformedURLException, IOException {
+    public void iOSSettings()throws MalformedURLException, IOException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("platformVersion", "12.1");

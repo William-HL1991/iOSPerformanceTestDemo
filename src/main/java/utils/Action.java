@@ -254,7 +254,7 @@ public class Action {
         try{
             (new WebDriverWait(driver, timeout)).until(ExpectedConditions.presenceOfElementLocated(by));
         }catch(Exception e){
-
+            e.printStackTrace();
         }
 
     }
@@ -285,5 +285,6 @@ public class Action {
         byte[] bytesZip = Base64.getMimeDecoder().decode(b64Zip);
         FileOutputStream stream = new FileOutputStream(fileName);
         stream.write(bytesZip);
+        stream.close();
     }
 }
