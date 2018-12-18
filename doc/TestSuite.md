@@ -1,0 +1,2 @@
+#TestSuite
+测试基础类，主要做iOS测试基础设置，以及instrument中的Profile名称定义。
